@@ -49,7 +49,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             코딩테스트 연습
+  - title:             코딩테스트
     url:               /example/
   - title:             Projects
     url:               /docs/
