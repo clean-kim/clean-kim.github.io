@@ -1,3 +1,7 @@
+---
+layout: plain
+title: MIT
+---
 # MIT License
 
 Copyright (c) \<YEAR\> \<COPYRIGHT HOLDER\>

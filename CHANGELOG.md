@@ -504,7 +504,7 @@ So far Hydejack has been a decent Jekyll theme, but with v8 it really starts sta
         path:         hydejack
       values:
         accent_color: rgb(38,139,210)
-        accent_image: /assets/img/hydejack-sidebar-bg.jpg
+        accent_image: /assets/img/hydejack-bg.jpg
   ~~~
 
   Comment: The code to find the color for a given page was complicated and slow (potentially iterating all categories/tags to find the right one).

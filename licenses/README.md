@@ -1,3 +1,7 @@
+---
+layout: plain
+title: README
+---
 # Licenses
 
 ## Open Source

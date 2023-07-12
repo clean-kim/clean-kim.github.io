@@ -1,3 +1,7 @@
+---
+layout: plain
+title: PRO
+---
 # PRO License
 
 * this list will be replaced by the table of contents
