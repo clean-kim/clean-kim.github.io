@@ -49,9 +49,9 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
+  - title:             코딩테스트 연습
     url:               /example/
-  - title:             Documentation
+  - title:             Projects
     url:               /docs/
   - title:             About
     url:               /about/
@@ -80,8 +80,8 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9
+#theme: jekyll-theme-hydejack
+ remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
