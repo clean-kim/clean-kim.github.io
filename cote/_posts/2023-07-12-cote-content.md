@@ -14,7 +14,7 @@ function solution(players, callings) {
     for(let i=0; i<callings.length; i++) {
         const idx = map.get(callings[i]);
         [players[idx], players[idx-1]] = [players[idx-1], players[idx]];
-        map.set(players[idx-1], map.get(players[idx-1])-1);
+        map.set(players[idx-1], map.get(players[idx]));
         map.set(players[idx], map.get(players[idx])+1);
     }
     return players;

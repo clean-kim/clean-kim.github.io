@@ -83,13 +83,13 @@ theme: jekyll-theme-hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/bg.jpg
+accent_image:          none
 accent_color:          rgb(95,76,69)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(25,55,71)
+theme_color:           rgb(95,76,69)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
@@ -106,7 +106,7 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
 font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 
-favicon: /favicon.ico
+favicon: /assets/icons/favicon.ico
 apple_touch_icon: /assets/img/logo.png
 
 defaults:
@@ -116,9 +116,9 @@ defaults:
       path:            hydejack/
     values:
       accent_color:    rgb(95,76,69)
-      theme_color:     rgb(32,32,32)
-      accent_image:
-      background:    rgb(32,32,32)
+      theme_color:     rgb(95,76,69)
+      accent_image:    none
+      background:    rgb(95,76,69)
       overlay:       false
 
   # Don't include documents in assets in the sitemap
