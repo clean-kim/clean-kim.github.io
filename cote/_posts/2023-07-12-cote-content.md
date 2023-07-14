@@ -7,18 +7,19 @@
 ~~~js
 function solution(players, callings) {
     const map = new Map();
-    for(let i=0; i<players.length; i++) {
-        map.set(players[i], i);
+    for(let i=0; i<players.length; i++) {   // 모든 플레이어를 맵 객체에 담기
+        map.set(players[i], i);             // key에 배열값, value에 인덱스 정보(순서)를 담는다
     }
 
     for(let i=0; i<callings.length; i++) {
-        const idx = map.get(callings[i]);
-        [players[idx], players[idx-1]] = [players[idx-1], players[idx]];
-        map.set(players[idx-1], map.get(players[idx]));
-        map.set(players[idx], map.get(players[idx])+1);
+        const idx = map.get(callings[i]);                                   // callings[i] 값으로 map에 저장된 해당 플레이어의 인덱스 값을 가져옴
+        [players[idx], players[idx-1]] = [players[idx-1], players[idx]];    // 구조분해할당 표현식을 이용해서 players 배열에서 idx 인덱스에 저장된 값을 앞의 값과 바꿈 
+        map.set(players[idx-1], map.get(players[idx]));                     // 뒤로 이동한 플레이어는 앞의 인덱스 값 
+        map.set(players[idx], map.get(players[idx])+1);                     // 인덱스 값 증가시킴
     }
     return players;
 }
+
 ~~~
 
 ### 시도했던 코드들
