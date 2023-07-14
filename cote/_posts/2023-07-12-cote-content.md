@@ -13,13 +13,12 @@ function solution(players, callings) {
 
     for(let i=0; i<callings.length; i++) {
         const idx = map.get(callings[i]);                                   // callings[i] 값으로 map에 저장된 해당 플레이어의 인덱스 값을 가져옴
-        [players[idx], players[idx-1]] = [players[idx-1], players[idx]];    // 구조분해할당 표현식을 이용해서 players 배열에서 idx 인덱스에 저장된 값을 앞의 값과 바꿈 
-        map.set(players[idx-1], map.get(players[idx]));                     // 뒤로 이동한 플레이어는 앞의 인덱스 값 저장
-        map.set(players[idx], map.get(players[idx])+1);                     // 앞으로 이동한 플레이어에는 인덱스 값 증가시킴
+        [players[idx], players[idx-1]] = [players[idx-1], players[idx]];    // 구조분해할당 표현식을 이용해서 players 배열에서 idx 인덱스에 저장된 값을 앞의 값과 바꿈
+        map.set(players[idx], map.get(players[idx-1]));                     // 앞으로 이동한 플레이어에는 기존 뒤에 있던 인덱스 값 저장
+        map.set(players[idx-1], map.get(players[idx])-1);                   // 뒤로 이동한 플레이어는 인덱스 값 감소
     }
     return players;
 }
-
 ~~~
 
 ### 시도했던 코드들
